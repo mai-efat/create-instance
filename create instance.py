@@ -22,7 +22,7 @@ def lambda_handler(event, context):   # Start of the Lambda handler function
             MinCount=1,
             TagSpecifications=[{         # This creates a tag for the instance
                 'ResourceType': 'instance',
-                'Tags': [{'Key': 'Name', 'Value': 'systemvpc'}]
+                'Tags': [{'Key': 'Name', 'Value': 'Dry-run'}]
             }]
         )
         
